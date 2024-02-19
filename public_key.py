@@ -3,7 +3,7 @@
 #!/bin/python3
 
 from Crypto.PublicKey import RSA
-f = open("id_rsa.pub", "r")
+f = open("id_rsa.pub", "r")  # specify your file path
 key = RSA.importKey(f.read())
 print(key.n)
 print(key.e)
